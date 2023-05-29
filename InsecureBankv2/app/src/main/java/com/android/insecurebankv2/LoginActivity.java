@@ -51,8 +51,8 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.activity_log_main);
 		String mess = getResources().getString(R.string.is_admin);
 		if (mess.equals("no")) {
-			View button_CreateUser = findViewById(R.id.button_CreateUser);
-			button_CreateUser.setVisibility(View.GONE);
+//			View button_CreateUser = findViewById(R.id.button_CreateUser);
+//			button_CreateUser.setVisibility(View.GONE);
 		}
 		login_buttons = (Button) findViewById(R.id.login_button);
 		login_buttons.setOnClickListener(new View.OnClickListener() {
@@ -63,13 +63,13 @@ public class LoginActivity extends Activity {
                 performlogin();
             }
         });
-        createuser_buttons = (Button) findViewById(R.id.button_CreateUser);
-        createuser_buttons.setOnClickListener(new View.OnClickListener() {
+//        createuser_buttons = (Button) findViewById(R.id.button_CreateUser);
+       createuser_buttons.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                createUser();
+//                createUser();
             }
         });
 
@@ -113,10 +113,10 @@ public class LoginActivity extends Activity {
     <<WIP Code>>
     ToDo: Add functionality here.
     */
-    protected void createUser() {
-        Toasteroid.show(this, "Create User functionality is still Work-In-Progress!!", Toasteroid.STYLES.WARNING, Toasteroid.LENGTH_LONG);
-
-    }
+//    protected void createUser() {
+//        Toasteroid.show(this, "Create User functionality is still Work-In-Progress!!", Toasteroid.STYLES.WARNING, Toasteroid.LENGTH_LONG);
+//
+//    }
 
     /*
     The function that allows the user to autofill the credentials

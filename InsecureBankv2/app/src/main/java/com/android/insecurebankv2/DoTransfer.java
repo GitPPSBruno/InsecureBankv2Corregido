@@ -75,7 +75,7 @@ public class DoTransfer extends Activity {
 	InputStream in ;
 	String serverip = "";
 	String serverport = "";
-	String protocol = "http://";
+	String protocol = "https://";
 	Button button1;
 	SharedPreferences serverDetails;
 	public static final String MYPREFS2 = "mySharedPreferences";
